@@ -1,0 +1,49 @@
+#uploadLable {
+    background-color: #E1E5E8;
+    color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#uploadButton {
+    width: 60%;
+    padding: 3px;
+    font-size: 18px;
+    background: linear-gradient(rgb(143, 177, 250), rgb(2, 51, 187));
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
+}
+
+.mainBox {
+    border: 1px solid black;
+}
+
+
+/* 
+.chart {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item-chart {
+    MIN-width: 400px;
+    width: 49%;
+    background-color: aqua;
+} */
+
+.graphCard {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

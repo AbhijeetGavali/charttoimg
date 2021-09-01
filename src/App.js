@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import ReadFileToChart from "./readFileToChart/ReadFileToChart";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container>
+        <Row className="justify-content-md-center my-4">
+          <Col md="auto">
+            Excel to chart convertor.
+            <hr />
+          </Col>
+        </Row>
+        <ReadFileToChart />
+      </Container>
+    </>
   );
 }
-
-export default App;

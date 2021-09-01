@@ -1,0 +1,45 @@
+.dashboard-numeric-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2% !important;
+}
+.db-numeric-section1 {
+  background-color: #ffbcbc;
+  align-items: center;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.db-numeric-section2 {
+  background-color: #b86dff;
+  align-items: center;
+  padding: 1%;
+  text-align: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.db-numeric-section3 {
+  background-color: #d5ecc2;
+  align-items: center;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.graph-section {
+  margin-top: 5%;
+}
+.actual-graph {
+  width: 100% !important;
+  /* height: 100%; */
+}
