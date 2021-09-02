@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  BarChart,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-  Bar
-} from "recharts";
+import { BarChart, XAxis, YAxis, ResponsiveContainer, Bar } from "recharts";
 
-export default function App(props) {
+export default function SimpleBarChartCustome(props) {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart width={150} height={40} data={props.data}>
