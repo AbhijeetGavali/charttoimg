@@ -23,8 +23,11 @@ export default function DataUpload(props) {
       };
     });
     promise.then((data) => {
-
-      props.setData(data);
+      if (data.name != null) {
+        props.setData(data);
+      } else {
+        alert("Data must contain name field in it");
+      }
     });
   }
 
@@ -33,7 +36,11 @@ export default function DataUpload(props) {
       <Form
         onSubmit={(e) => {
           e.preventDefault();
-          showCharts(excel);
+          if (excel != null) {
+            showCharts(excel);
+          } else {
+            alert("please provide excel sheet");
+          }
         }}
       >
         <Form.Group controlId="formFileLg">

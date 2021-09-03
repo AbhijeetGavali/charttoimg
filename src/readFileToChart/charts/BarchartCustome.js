@@ -16,12 +16,12 @@ const colors = scaleOrdinal(schemeCategory10).range();
 const getPath = (x, y, width, height) => {
   return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${
     y + height / 3
-  } 
-  ${x + width / 2}, ${y}
-  C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${
+  }
+${x + width / 2}, ${y}
+C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${
     x + width
   }, ${y + height}
-  Z`;
+Z`;
 };
 
 const TriangleBar = (props) => {
@@ -32,7 +32,7 @@ const TriangleBar = (props) => {
 
 export default function BarchartCustome(props) {
   return (
-    <ResponsiveContainer width="99%" height="100%">
+    <ResponsiveContainer>
       <BarChart width={500} height={300} data={props.data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
@@ -43,11 +43,11 @@ export default function BarchartCustome(props) {
           shape={<TriangleBar />}
           label={{ position: "top" }}
         >
-          {props.data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-          ))}{" "}
+          {props.data.map((entry, index) => {
+            return <Cell key={`cell-${index}`} fill={colors[index % 20]} />;
+          })}{" "}
         </Bar>{" "}
-      </BarChart>{" "}
+      </BarChart>
     </ResponsiveContainer>
   );
 }
